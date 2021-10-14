@@ -13,3 +13,18 @@
  *= require_tree .
  *= require_self
  */
+
+.box {
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px solid #47d7ac;
+  border-radius: 3px;
+}
+
+.recipes {
+  display: flex;
+  flex-wrap: wrap;
+}
+.recipe {
+  background-color: #fedc5c;
+}

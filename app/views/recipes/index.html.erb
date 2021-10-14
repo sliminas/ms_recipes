@@ -1,0 +1,10 @@
+<h1>Recipes</h1>
+
+<div class="box">
+  <% @recipes.each do |recipe| %>
+    <div class="box recipe">
+      <%= recipe.title %>
+      <%= image_tag recipe.photo.url %>
+    </div>
+  <% end %>
+</div>
