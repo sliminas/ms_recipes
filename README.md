@@ -1,24 +1,13 @@
 # ms_recipes
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Display recipes from a contentful API.
 
-Things you may want to cover:
+Run the server with 
 
-* Ruby version
+```shell
+SPACE_ID=<contentful space ID> ACCESS_TOKEN=<contentful access token> rails s
+#e.g.
+SPACE_ID=space123 ACCESS_TOKEN=token_123 rails s
+```
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Then go to `localhost:3000` to see the list of recipes.
