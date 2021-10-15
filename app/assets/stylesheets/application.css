@@ -14,17 +14,51 @@
  *= require_self
  */
 
+* {
+  box-sizing: border-box;
+}
+
 .box {
-  margin: 1rem;
-  padding: 1rem;
-  border: 2px solid #47d7ac;
+  border: 3px solid #47d7ac;
   border-radius: 3px;
+}
+.button {
+  background-color: #47d7ac;
+  color: #2d2926;
+  padding: .5rem;
+  text-decoration: none;
+}
+
+body {
+  padding: 1rem;
 }
 
 .recipes {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
+
 .recipe {
   background-color: #fedc5c;
+  padding: 1rem;
+  display: flex;
+  margin-bottom: 1rem;
+}
+.recipe--preview {
+  width: calc(50% - 1rem);
+}
+.recipe__image {
+  margin-right: 1rem;
+}
+.recipe__image--small {
+  height: 100px;
+}
+.recipe__image--medium {
+  height: 300px;
+}
+
+.attribute__title {
+  font-weight: bold;
+  margin-right: 1rem;
 }

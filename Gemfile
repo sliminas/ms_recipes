@@ -13,6 +13,7 @@ gem 'turbolinks', '~> 5'
 gem 'webpacker', '~> 5.0'
 
 gem 'contentful'
+gem 'redcarpet'
 
 gem 'bootsnap', '>= 1.4.4', require: false
 

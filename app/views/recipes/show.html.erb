@@ -1,0 +1,19 @@
+<nav class="nav">
+  <%= link_to 'See all recipes', root_path, class: 'box button' %>
+</nav>
+
+<h1>Recipe </h1>
+
+<div class="box recipe recipe--details">
+  <%= image_tag @recipe.image_url, class: 'recipe__image recipe__image--medium' %>
+  <div>
+    <h2><%= @recipe.title %></h2>
+    <%= render 'attribute', attribute: 'Calories', value: @recipe.calories %>
+    <%= render 'attribute', attribute: 'Chef', value: @recipe.chef if @recipe.chef %>
+    <%= render 'attribute', attribute: 'Tags', value: @recipe.tags if @recipe.tags %>
+
+    <div class="recipe__description">
+      <%= @recipe.description_html %>
+    </div>
+  </div>
+</div>

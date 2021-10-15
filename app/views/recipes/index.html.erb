@@ -1,10 +1,10 @@
 <h1>Recipes</h1>
 
-<div class="box">
+<div class="recipes">
   <% @recipes.each do |recipe| %>
-    <div class="box recipe">
-      <%= recipe.title %>
-      <%= image_tag recipe.photo.url %>
-    </div>
+    <%= link_to recipe_path(recipe.id), class: 'box recipe recipe--preview' do %>
+      <%= image_tag recipe.image_url, class: 'recipe__image recipe__image--small' %>
+      <h2><%= recipe.title %></h2>
+    <% end %>
   <% end %>
 </div>
